@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+:root{
+    --red: #db2b39;
+    --blue: #0b132b;
+    --white: #E3DFFF;
+    --lightBlue: #468c98;
+}
+
+body {
+    background-color: black;
+    background-image: radial-gradient(#21293e 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+}
+
+.full-container {
+    margin-top: 30vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-name {
+    color: #E3DFFF;
+    font-family: "Montserrat";
+}
+
+.main-profession {
+    font-family: "Montserrat";
+    background-color: var(--lightBlue);
+    background-size: contain;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 10px;
+    color: #E3DFFF;
+}
+
+.important-text {
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    color: var(--lightBlue);
+    text-align: center;
+}
+
+.selection-vignettes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 10vh;
+}
+
+.vignettes {
+    border: solid #E3DFFF;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.vignettes-text {
+    color: #E3DFFF;
+    font-family: "Montserrat";
+}
+
+.intro {
+    padding-left:10%;
+    padding-right:10%;
+}
+.desc {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    color: #E3DFFF;
+    text-align: center;
+}
+
+
+.projects-list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40vh;
+}
+
+.project-container {
+    display : flex; 
+    margin-left : 20%;
+    margin-right: 20%;
+    border-bottom: solid var(--white);
+}
+
+.project-img {
+    width: 50%;
+    height: auto;
+}
+
+.project-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    grid-column: 1fr;
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    color: #E3DFFF;
+    text-align: center;
+}
+
+.project-title {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    color: #E3DFFF;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.label-item {
+    font-family: "Montserrat";
+    background-color: var(--lightBlue);
+    background-size: contain;
+    border-radius: 8px;
+    padding: 7px;
+    margin-left: 10px;
+    color: #E3DFFF;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------------------------*/
+/*This part is used to create an explosive effect */ 
+.explosive::after{
+    transition: opacity 2s ease;
+}
+
+.explosive:hover > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+  
+.explosive:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+  
+.explosive:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+  
+.explosive:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+  
+.explosive:hover > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+  
+.explosive:hover > .letter:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+  
+.explosive:hover > .letter:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+  
+.explosive:hover > .letter:nth-child(8) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+  
+.explosive:hover > .letter:nth-child(9) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+  
+.explosive:hover > .letter:nth-child(10) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+  
+.explosive:hover > .letter:nth-child(11) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+  
+.explosive:hover > .letter:nth-child(12) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
+.explosive:hover > .letter:nth-child(13) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+  
+.explosive:hover > .letter:nth-child(14) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+  
+.explosive:hover > .letter:nth-child(15) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+  
+.explosive:hover > .letter:nth-child(16) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+  
+.explosive:hover > .letter:nth-child(17) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+  
+.explosive:hover > .letter:nth-child(18) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+  
+.explosive:hover > .letter:nth-child(19) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+  
+.letter {
+    display: inline-block;
+    transition: transform 500ms ease
+}
+
+.letter-start {
+    margin-left: 2px;
+}
+
+/*-------*/

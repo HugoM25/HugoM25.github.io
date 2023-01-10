@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="styleSheet" href="styleSheet.css">
+    <script type="text/javascript" src="animation.js" defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="full-container">
+        <!--Container for the title with my name and the profession-->
+        <div class="main-container">
+            <h1 class="main-name">Hugo MEIRINHO</h1>
+            <h1 class="main-profession explosive" id="word-explosive" > Engineering Student </h1>
+        </div>
+        <!--Container for the introduction text-->
+        <div class="intro">
+            <p class="desc">
+                Hi ! I'm a french CS student. I really like creating <span class="important-text">video games</span>, 
+                automating <span class="important-text">content creation</span>, 
+                creating <span class="important-text">embedded systems</span> and <span class="important-text">solving problems</span>.
+            </p>
+        </div>
+        <!--Container for the shortcut to the differents sections-->
+        <div class="selection-vignettes-container">
+            <div class="vignettes">
+                <h2 class="vignettes-text">
+                    About Me
+                </h2>
+            </div>
+            <div class="vignettes">
+                <h2 class="vignettes-text">
+                   My Projects
+                </h2>
+            </div>
+            <div class="vignettes">
+                <h2 class="vignettes-text">
+                    Contact Me
+                </h2>
+            </div>
+        </div>
+        <!--Container for the projects-->
+        <div class="projects-list-container">
+            <!--Container for the project tangram-->
+            <div class="project-container">
+                <img class="project-img" src="Images/tangram.png">
+                <div class="project-text-container">
+                    <h1 class="project-title"> Tangram Solver </h1>
+                    <p class="project-description"> 
+                        This project is a command line tool capable of solving most tangrams puzzles in matters of seconds. 
+                        You can use your own images or use the built-in editor to create your own puzzles and solve them using this program.
+                    </p>
+                    <div class="label-container">
+                        <h4 class="label-item">python</h4>
+                    </div>
+                </div>
+            </div>
+            <!--Container for the project pokeTeamBuilder-->
+            <div class="project-container">
+                <div class="project-text-container">
+                    <h1 class="project-title"> PokeTeamBuilder </h1>
+                    <p class="project-description"> 
+                        This project is a web-app used to create teams for pokemonshowdown. 
+                        It recommends the pokemon teams using a database that i created filled with data from the pokemon smogon monthly stats.
+                        You can export the generated pokemon team to a text format that you can copy paste in the pokemon showdown team builder.
+                    </p>
+                    <div class="label-container">
+                        <h4 class="label-item">python</h4>
+                        <h4 class="label-item">angular</h4>
+                        <h4 class="label-item">neo4j</h4>
+                    </div>
+                </div>
+                <img class="project-img" src="Images/github_icon.svg">
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
