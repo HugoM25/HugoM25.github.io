@@ -58,10 +58,19 @@ body {
 }
 
 .vignettes {
+    background-color: transparent;
     border: solid #E3DFFF;
     border-radius: 16px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: background-color 200ms ease;
+    text-decoration: none   ;
+
+}
+
+.vignettes:hover {
+    background-color: var(--lightBlue);
+    color: black;
 }
 
 .vignettes-text {
@@ -80,11 +89,18 @@ body {
     text-align: center;
 }
 
+.section-title {
+    font-family: "Montserrat";
+    font-size: 2em;
+    color: #E3DFFF;
+    text-align: center;
+    margin-top: 40vh;
+}
+
 
 .projects-list-container {
     display: flex;
     flex-direction: column;
-    margin-top: 40vh;
 }
 
 .project-container {
