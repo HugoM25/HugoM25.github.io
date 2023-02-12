@@ -20,3 +20,12 @@ const enhance = id => {
 }
 
 enhance('word-explosive');
+
+
+//Handle theme change
+
+const themeCheckBox = document.getElementById('theme-checkbox');
+
+themeCheckBox.addEventListener('change', () => {
+    document.body.setAttribute('data-theme', themeCheckBox.checked ? 'dark' : 'light');
+});
