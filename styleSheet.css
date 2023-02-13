@@ -2,30 +2,25 @@
 
 :root{
     --red: #af125a;
-    --secondary-color: #0b132b;
-    --primary-color: #E3DFFF;
-    --dots-color : rgba(0,0,0,0.1);
-    --lightBlue: #468c98;
-
-    --angle-gradient: 0deg;
-
-}
-
-[data-theme="dark"] {
     --secondary-color: #E3DFFF;
     --primary-color: #0d1f2d;
     --dots-color : rgba(255,255,255,0.1);
+    --lightBlue: #468c98;
+
+    --angle-gradient: 15deg;
+
 }
 
 
+
 body {
-    background-image: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-color) 100%), radial-gradient(rgba(255,255,255,1) 8%, rgba(0, 0, 0, 1) 8%), repeating-linear-gradient(var(--angle-gradient), #ff0000 0%, #0040ff 100%);
-    background-size:  100% 100%, 3vmin 3vmin, 100% 150vh;
+    background-image: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-color) 100%), radial-gradient(rgba(255,255,255,0) 8%, rgba(0, 0, 0, 1) 8%), repeating-linear-gradient(var(--angle-gradient), rgba(28, 254, 186, 1) 33%,   rgba(0, 64, 255, 1) 66%, rgba(28, 254, 186, 1) 100%);
+    background-size:  100% 100%, 2vmin 2vmin, 100% 100vh;
     background-blend-mode: difference, multiply;
             
     -webkit-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out;
-
+    
     font-family: "Montserrat";
 }
 
@@ -58,7 +53,6 @@ body {
     height: 100vh;
 
     padding-top: 20vh;
-    padding-bottom: 20vh;
 }
 
 /* name and profession */
@@ -116,6 +110,8 @@ body {
     align-items: center;
 
     border: var(--secondary-color) solid;
+
+    background-color: #0d1f2d;
 }
 
 .shortcut-item:hover {
@@ -150,27 +146,27 @@ body {
 /* ------------------------------------------------------------------- */
 
 .about-me-section {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
     padding: 20px;
+    background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
+
 }
 
 .about-me-title {
     width: 100%;
     color: #E3DFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;    
     font-size: 2em;
 }
 
 .about-me-desc {
     font-family: "Montserrat";
-    font-size: 1.5em;
+    font-size: 1em;
     color: #E3DFFF;
-    padding: 20px;
+    
 }
 
 
@@ -180,7 +176,6 @@ body {
 .skills-section {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
     padding: 20px;  
 }
 
@@ -210,6 +205,7 @@ body {
 
     margin: 10px;
 }
+
 
 
 
@@ -258,8 +254,39 @@ body {
 .projects-list-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10vh;
 }
 
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+
+    border: #E3DFFF solid ;
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+.project-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
 
 .project-container {
 
@@ -267,7 +294,8 @@ body {
     flex-direction: column;
     
     margin-top: 2%;
-    width: 100%;
+    padding: 5%;
+    width: 80%;
 
     align-items: center;
     justify-content: center;
@@ -276,10 +304,21 @@ body {
     background-color: var(--primary-color);
 }
 
+.project-tech {
+    color: var(--secondary-color);
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 .project-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    aspect-ratio: 16/9;
 }
 
 .project-text-container {
@@ -302,9 +341,32 @@ body {
     font-size: 1.5em;
     color: var(--secondary-color);
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
+
+.see-more-github {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    color : var(--secondary-color);
+
+    padding: 20px;
+}
+
+.see-more-github > object {
+    height: 50px;
+    width: 50px;
+}
+
+.see-more-github > h2 {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
 
 .label-item {
     font-family: "Montserrat";
@@ -448,6 +510,23 @@ body {
     transform: translateX(200%);
 }
 
+
+.footer {
+    background-color: #0d1f2d;
+
+    display: flex;
+    flex-direction: row; 
+
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.footer > h1 {
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+}
 
 /* ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
