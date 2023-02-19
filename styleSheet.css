@@ -51,12 +51,12 @@ body {
 /* ------------------------------------------------------------------- */
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    height: 100vh;
-
+    box-sizing: border-box;
+    display: block;
     padding-top: 20vh;
+    padding-bottom: 20vh;
+    min-height: 100vh;
+
 }
 
 /* name and profession */
@@ -284,6 +284,8 @@ body {
     margin: 10px;
 
     cursor: pointer;
+
+    text-align: center;
 }
 
 .project-link:hover {
@@ -392,6 +394,18 @@ body {
 .github-icon {
     height: 50px;
     width: 50px;
+}
+
+
+.see-more-github {
+    cursor: pointer;
+    transition: scale 0.5s ease;
+    scale: 0.9;
+}
+
+.see-more-github:hover {
+    text-decoration: underline;
+    scale: 1;
 }
 /*------------------------------------------------*/
 /*This part is used to create an explosive effect */ 
@@ -537,19 +551,69 @@ body {
     font-family: "Montserrat";
 }
 
+/*-----------------------------*/
+
+.contact-me-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
+
+}
+.contact-me-logo-container {
+    width: 70%;
+    height: 100%;
+    font-size: 2vw;    
+    box-sizing: border-box;
+    padding-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-logo {
+    color: var(--secondary-color);
+}
+
+.contact-me-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+.contact-me-infos > p {
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+}
+
+
+
+
 /* ------------------------------------------------------------------- */
 @media (max-width: 600px) {
     body {
         background-size:  100% 100%, 5vmin 5vmin, 100% 100vh;
     }
+    .main-content {
+        padding-top: 5vh;
+    }
     .main-container {
         flex-direction: column;
         align-items: center;
+        gap: 1px;
     }
 
     .tab-select {
         flex-direction: column;
         align-items: center;
+    }
+    .nav-container {
+        margin-top: 5vh;
     }
 
 
@@ -560,6 +624,15 @@ body {
         border-right: solid;
     }
 
-  }
+    .projects-list-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .skills-icons-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
