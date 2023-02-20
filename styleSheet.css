@@ -6,6 +6,7 @@
     --primary-color: #0d1f2d;
     --dots-color : rgba(255,255,255,0.1);
     --lightBlue: #468c98;
+    --lightGreen: #1cfeba;
 
     --angle-gradient: 15deg;
 
@@ -53,7 +54,7 @@ body {
 .main-content {
     box-sizing: border-box;
     display: block;
-    padding-top: 20vh;
+    padding-top: 30vh;
     padding-bottom: 20vh;
     min-height: 100vh;
 
@@ -172,14 +173,45 @@ body {
     color: #E3DFFF;
 }
 
+/*----------------------*/
 
+.resume-section {
+    display: flex;
+    flex-direction: column;
 
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%; 
+}
+
+.resume-button {
+    height: 100%;
+    background-color: #0d1f2d;
+    border: solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+
+.resume-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.resume-section > h2 {
+    color: var(--secondary-color);
+    text-align: center;
+}
 /*----------------------*/
 
 .skills-section {
     display: flex;
     flex-direction: column;
     padding: 20px;  
+
+    background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
 }
 
 .skills-title {
@@ -311,6 +343,12 @@ body {
 
 .project-tech {
     color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .project-tech-stack {
@@ -348,6 +386,17 @@ body {
     text-align: center;
 }
 
+.project-desc-container {
+
+}
+
+.project-desc {
+    font-family: "Montserrat";
+    font-size: 1em;
+    color: var(--secondary-color);
+    text-align: justify;
+}
+
 .see-more-github {
     display: flex;
     flex-direction: row;
@@ -359,8 +408,13 @@ body {
 
     padding: 20px;
 
-    
     gap: 10px;
+
+    cursor: pointer;
+}
+
+.see-more-github:hover {
+    text-decoration: underline;
 }
 
 .see-more-github > object {
@@ -396,17 +450,10 @@ body {
     width: 50px;
 }
 
-
-.see-more-github {
-    cursor: pointer;
-    transition: scale 0.5s ease;
-    scale: 0.9;
+.hidden-ref {
+    text-decoration: none;
 }
 
-.see-more-github:hover {
-    text-decoration: underline;
-    scale: 1;
-}
 /*------------------------------------------------*/
 /*This part is used to create an explosive effect */ 
 .explosive::after{
@@ -579,16 +626,18 @@ body {
 .contact-me-infos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    align-items: left;
+    justify-content: space-around;
 
 }
 
 
 
-.contact-me-infos > p {
+.contact-me-infos > a, .contact-me-infos > p {
+    text-decoration: none;
     color: var(--secondary-color);
     font-family: "Montserrat";
+    font-size: 1.2em;
 }
 
 
@@ -597,7 +646,7 @@ body {
 /* ------------------------------------------------------------------- */
 @media (max-width: 600px) {
     body {
-        background-size:  100% 100%, 5vmin 5vmin, 100% 100vh;
+        background-size:  100% 100%, 3vmin 3vmin, 100% 100vh;
     }
     .main-content {
         padding-top: 5vh;
@@ -633,6 +682,23 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .contact-me-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .contact-me-logo-container {
+        padding: 2px;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .contact-me-infos {
+        gap: 5px;
+    }
+    
 }
 
 
