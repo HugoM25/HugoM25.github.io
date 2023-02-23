@@ -157,7 +157,13 @@ body {
     flex-direction: column;
     padding: 20px;
     background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
+    color : var(--secondary-color);
 
+}
+
+.about-me-section > h2  {
+    color: var(--secondary-color);
+    text-align: center;
 }
 
 .about-me-title {
@@ -187,7 +193,8 @@ body {
 
 .resume-button {
     height: 100%;
-    background-color: #0d1f2d;
+    width: 50%;
+    background-color: transparent;
     border: solid var(--secondary-color);
     color: var(--secondary-color);
     font-family: "Montserrat";
@@ -640,8 +647,70 @@ body {
     font-size: 1.2em;
 }
 
+/*-----------------------------*/
 
+.soft-skills-section {
+    height: 100%;
+    width: 100%;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.soft-skills-section > h2 {
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 2em;
+    text-align: center;
+}
+
+.soft-skills-list {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    padding: 30px;
+}
+
+.soft-skill-container {
+    height: 100%;
+    width: 20%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+
+    background-color: var(--primary-color);
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.soft-skill-container > h3 {
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+}
+
+.soft-skill-container > p {
+    color: var(--secondary-color);
+    font-family: "Montserrat";
+    font-size: 1.2em;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.soft-skill-container > object {
+    width: 50%;
+    height: 50%;
+}
 
 /* ------------------------------------------------------------------- */
 @media (max-width: 600px) {
@@ -700,5 +769,4 @@ body {
     }
     
 }
-
 
