@@ -17,6 +17,10 @@ html, body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     background-image: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-color) 100%), radial-gradient(rgba(255,255,255,0) 8%, rgba(0, 0, 0, 1) 8%), repeating-linear-gradient(var(--angle-gradient), rgba(28, 254, 186, 1) 33%,   rgba(0, 64, 255, 1) 66%, rgba(28, 254, 186, 1) 100%);
@@ -155,7 +159,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
     color : var(--secondary-color);
 
@@ -173,9 +177,13 @@ body {
     font-size: 2em;
 }
 
-.about-me-desc {
+.about-me-text-container {
+    width: 50%
+}
+
+.about-me-text-container > p {
     font-family: "Montserrat";
-    font-size: 1em;
+    font-size: 1.2em;
     color: #E3DFFF;
 }
 
@@ -339,7 +347,7 @@ body {
     
     margin-top: 2%;
     padding: 5%;
-    width: 80%;
+    width: 90%;
 
     align-items: center;
     justify-content: center;
@@ -650,11 +658,12 @@ body {
 /*-----------------------------*/
 
 .soft-skills-section {
-    height: 100%;
+    height: 80vh;
     width: 100%;
-
     display: flex;
     flex-direction: column;
+
+    padding: 10px;
 }
 
 .soft-skills-section > h2 {
@@ -672,12 +681,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2%;
-    padding: 30px;
+
+    gap: 3vw;
 }
 
 .soft-skill-container {
-    height: 100%;
+    height: 80%;
     width: 20%;
     
     display: flex;
@@ -766,6 +775,22 @@ body {
 
     .contact-me-infos {
         gap: 5px;
+    }
+
+
+    .soft-skill-container {
+        width: 80%;
+        height: 30%;
+    }
+
+    .soft-skills-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .soft-skills-section {
+        height: 100%;
     }
     
 }
