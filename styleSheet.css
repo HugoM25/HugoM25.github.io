@@ -159,10 +159,24 @@ body {
 
     display: flex;
     flex-direction: column;
+    
     padding: 40px;
     background-image: linear-gradient(45deg, #468c98 0%, #1cfeba 100%);
     color : var(--secondary-color);
+}
 
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.resume-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .about-me-section > h2  {
@@ -200,14 +214,13 @@ body {
 }
 
 .resume-button {
-    height: 100%;
-    width: 50%;
     background-color: transparent;
     border: solid var(--secondary-color);
     color: var(--secondary-color);
     font-family: "Montserrat";
     font-size: 1.5em;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .resume-button:hover {
@@ -712,8 +725,9 @@ body {
     font-family: "Montserrat";
     font-size: 1.2em;
 
-    text-align: center;
+    text-align: justify;
     justify-content: center;
+
 }
 
 .soft-skill-container > object {
