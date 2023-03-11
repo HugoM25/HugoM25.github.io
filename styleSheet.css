@@ -15,6 +15,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -221,6 +222,8 @@ body {
     font-size: 1.5em;
     border-radius: 8px;
     padding: 10px;
+
+    text-decoration: none;
 }
 
 .resume-button:hover {
@@ -757,7 +760,6 @@ body {
         margin-top: 5vh;
     }
 
-
     .tab-select > .shortcut-item:nth-child(2) {
         border-top: none;
         border-bottom: none;
@@ -807,5 +809,22 @@ body {
         height: 100%;
     }
     
+    .about-me-container {
+        flex-direction: column;
+    }
+    .about-me-text-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .resume-part {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .resume-part > h2 {
+        text-align: center;
+    }
 }
 
