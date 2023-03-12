@@ -18,8 +18,6 @@ background-size:  100% 100%, 2vmin 2vmin, 100% 100vh;
 background-blend-mode: difference, multiply;
 ```
 
-<h2>Explosive text effect (from this video) </h2>
-
 # Author
 
 # License 
