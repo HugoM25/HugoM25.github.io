@@ -1,0 +1,90 @@
+[
+  {
+    "id": "smart-chessboard",
+    "title": "Smart IOT Chessboard",
+    "description": "An IOT electronic chessboard with multiple features including move suggestions and a web interface.",
+    "date": "2024",
+    "tags": ["Python", "Electronic", "React.js"],
+    "categories": ["electronic"],
+    "image": "assets/photos/chessboard_proj.png",
+    "code": "https://github.com/HugoM25/PacmanAI50",
+    "demo": ""
+  },
+  {
+    "id": "guitar-video-generator",
+    "title": "Guitar Video Generator",
+    "description": "Video generator based on guitar tabs scrapped from youtube tutorials.",
+    "date": "2017",
+    "tags": ["Python", "Computer Vision", "Deep Learning"],
+    "categories": ["ml", "cv"],
+    "image": "assets/photos/guitarbot_proj.png",
+    "code": "https://github.com/HugoM25/GuitarBot",
+    "demo": ""
+  },
+  {
+    "id": "pokemon-showdown-team-generator",
+    "title": "Pokemon Showdown Team Generator",
+    "description": "Generates competitive teams for Pokemon Showdown based on usage statistics and pokemon synergies.",
+    "date": "2022",
+    "tags": ["Python", "Data", "Game Development", "Angular", "Flask"],
+    "categories": ["ml", "game"],
+    "image": "assets/photos/team_generator_proj.png",
+    "code": "https://github.com/HugoM25/PokeTeamBuilder",
+    "demo": ""
+  },
+  {
+    "id": "whos-that-pokemon-webapp",
+    "title": "Who's That Pokemon?",
+    "description": "The famous Pokemon identification game reimagined as a web app.",
+    "date": "2022",
+    "tags": ["React"],
+    "categories": ["game"],
+    "image": "assets/photos/whosthatpokemon_proj.gif",
+    "code": "https://github.com/HugoM25/WhosThatPokemon",
+    "demo": ""
+  },
+  {
+    "id": "tangram-ai-solver",
+    "title": "Tangram AI Solver",
+    "description": "An AI-powered solver for the Tangram puzzle game.",
+    "date": "2023",
+    "tags": ["Python", "AI"],
+    "categories": ["ai"],
+    "image": "assets/photos/tangram_proj.png",
+    "code": "https://github.com/timothewt/TangramAI",
+    "demo": ""
+  },
+  {
+    "id": "pacman-rl",
+    "title": "Pacman Reinforcement Learning",
+    "description": "A reinforcement learning agent that plays Pacman using deep Q-learning.",
+    "date": "2024",
+    "tags": ["Python", "Reinforcement Learning", "Game Development"],
+    "categories": ["ml", "game", "rl"],
+    "image": "assets/photos/pacman_proj.png",
+    "code": "https://github.com/HugoM25/PacmanAI50",
+    "demo": ""
+  },
+  {
+    "id": "character-versus-video-generator",
+    "title": "Character Versus Video Generator",
+    "description": "Generates videos of versus battles between characters famous characters easily.",
+    "date": "2021",
+    "tags": ["Python"],
+    "categories": [],
+    "image": "assets/photos/character_versus_proj.gif",
+    "code": "https://github.com/HugoM25/Character_Versus_Video_Generator",
+    "demo": ""
+  },
+  {
+    "id": "virtual-wheel-controller",
+    "title": "Virtual Wheel Controller",
+    "description": "A virtual controller for racing games using computer vision.",
+    "date": "2021",
+    "tags": ["Python", "Computer Vision"],
+    "categories": ["cv", "game"],
+    "image": "assets/photos/virtual_controller_proj.gif",
+    "code": "https://github.com/HugoM25/Virtual_Steering_Wheel_Controller",
+    "demo": ""
+  }
+]

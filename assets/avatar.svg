@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7CFCFF"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="32" fill="#0e1420"/>
+  <g filter="url(#f)">
+    <circle cx="300" cy="220" r="90" fill="url(#g1)" opacity="0.25"/>
+  </g>
+  <circle cx="300" cy="220" r="86" fill="#0f1624" stroke="url(#g1)" stroke-width="2"/>
+  <path d="M300 178c-30 0-54 24-54 54s24 54 54 54 54-24 54-54-24-54-54-54Z" fill="#11192b"/>
+  <path d="M180 430c16-64 64-108 120-108s104 44 120 108" stroke="url(#g1)" stroke-width="2"/>
+  <g filter="url(#glow)">
+    <rect x="160" y="400" width="280" height="60" rx="18" fill="#0f1624" stroke="url(#g1)" stroke-width="2"/>
+  </g>
+  <defs>
+    <filter id="f" x="160" y="80" width="280" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="glow" x="130" y="370" width="340" height="120" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+</svg>
